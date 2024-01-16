@@ -12,7 +12,6 @@ const [client, bot] = await Promise.all([
 ]);
 
 const channel = client.channels.cache.get(channelId);
-channel.send;
 
 client.on("guild_msg", async ({ name, message }) => {
     bot.chat(`/gc ${name}: ${message}`);
